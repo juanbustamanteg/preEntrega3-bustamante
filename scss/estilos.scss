@@ -1,0 +1,74 @@
+@import "estructura";
+@import "animaciones";
+@import "botones";
+@import "imagenes";
+@import "variables";
+
+* {
+    margin: 0;
+    padding:0;
+  }
+  
+  .TitleEvan {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color:black;
+  }
+  
+  .sectionTitle {
+    padding: $padding_texto;
+    font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+  
+    .sectionSubtitle {
+      padding:$padding_texto;
+      font-size: 30px;
+      color:#000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+  
+  .padding {
+    padding: $padding_texto;
+  }
+  
+  .release-style {
+    font-weight: bolder;
+  text-decoration:underline;
+  }
+  
+  .paddingX {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .sectionSubtitle--book {
+    @extend .sectionSubtitle;
+    font-size: 25px;
+    }  
+
+
+    .sectionSubtitle--book {
+        @extend .sectionSubtitle;
+        font-size: 25px;
+        }  
+
+    @mixin subtituloMenor ($tamanoLetra, $color) {
+        font-size: $tamanoLetra;
+        color: $color;
+    }
+
+    .subtituloMapa {
+        @include subtituloMenor(25px, grey )
+    }
+
+    .subtituloBuyAt {
+        @include subtituloMenor(20px, rgb(86, 83, 83) )
+    }

@@ -1,0 +1,51 @@
+
+* {
+    margin: 0;
+    padding:0;
+  }
+
+  .fadeIn1 {
+    animation: fadeIn 15s;
+  }
+  
+  .fadeIn2 {
+    animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .typeWriter {
+    color: #000000;
+    font-size: 26px;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-right: .19em;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 10s steps(100) infinite,  2s;
+    padding-bottom: 15px;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent
+    }
+    70% {
+      border-color: rgb(59, 57, 57)
+    }
+  }

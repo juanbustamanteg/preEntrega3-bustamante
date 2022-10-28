@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding:0;
+  }
+  
+header
+  .logoLobo {
+    width:8%;
+  }
+  
+  /* media queries */
+  .portadas {
+    height:400px;
+  }
+  @media (max-width: 768px) {
+    .portadas {
+      height:350px;
+    }
+  }
+  
+  @media (max-width: 480px){
+    .portadas {
+      height:250px;
+    }
+  }
+
+  .portadaHome {
+    height:450px;
+  }
+  @media (max-width: 768px) {
+    .portadaHome {
+      height:400px;
+    }
+  }
+  
+  @media (max-width: 480px){
+    .portadaHome {
+      height:300px;
+    }
+  }
